@@ -2,7 +2,7 @@
 
 ## 📚 Descrição do Projeto
 
-Este projeto tem como objetivo desenvolver um site informativo sobre **Java Web**, utilizando **HTML**, **CSS** e **JavaScript**. O site foi construído por alunos da disciplina de Desenvolvimento Web e será apresentado em sala para avaliação individual.
+Este projeto tem como objetivo desenvolver um site informativo sobre **Java Web**, utilizando **HTML**, **CSS** e **JavaScript**. O site foi construído por alunos da disciplina de Desenvolvimento Web e será apresentado em sala.
 
 ## 👨‍💻 Integrantes do Grupo
 
@@ -11,4 +11,4 @@ Este projeto tem como objetivo desenvolver um site informativo sobre **Java Web*
 - Pedro Manoel 
 - Kauan Luiz
 - Felipe Rafael
-
+- Rafael dos Santos

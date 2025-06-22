@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaWeb-site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMG/java web final.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header class="cabecao">
         <h1>Java Web</h1>
         <p>A tecnologia por trás das maiores soluções web do mundo!</p>
          </header>
@@ -15,7 +16,7 @@
         <nav class="Menu"> 
             <ul>
                 <li><a href="#java">Java</a></li>
-                <li><a href="#java">Java Web</a></li>
+                <li><a href="#javaweb">Java Web</a></li>
                 <li><a href="#importancia">Importância</a></li>
                 <li><a href="#vantedesvant">Vantagens/Desvantagens</a></li>
                 <li><a href="#curiosidades">Curiosidades</a></li>
@@ -25,24 +26,24 @@
         </nav>
         
         <main>
-             <section id="java">
+             <section id="java" class="java">
                 <h2>O que é Java?</h2>
                 <p><strong>Java</strong> é uma linguagem de programação orientada a objetos e uma plataforma amplamente utilizada no desenvolvimento de aplicações web, mobile, desktop e sistemas corporativos. Criada em 1995 pela Sun Microsystems, com James Gosling como principal desenvolvedor, sua origem remonta a 1991 com o Projeto Green, que buscava soluções para dispositivos inteligentes por meio da linguagem Oak — posteriormente renomeada para Java. Seu código é compilado em bytecode e executado pela Máquina Virtual Java (JVM), o que garante compatibilidade e desempenho consistente em diferentes plataformas, como Windows, Linux, macOS e Android.</p>
         </section>
 
-            <section id="javaweb">
+            <section id="javaweb" class="javaweb">
                 <h2>O que é Java Web?</h2>
                 <p><strong>Java Web</strong> é o ecossistema de ferramentas e tecnologias do Java voltado ao desenvolvimento de aplicações para a web. </p>
                 <p>Surgiu em 1997, com a expansão da linguagem Java para atender às demandas da internet. </p>
                 <p>Com ele, é possível criar desde páginas dinâmicas até sistemas empresariais complexos. Seu uso é amplamente adotado por bancos, empresas, órgãos governamentais e startups, graças à sua escalabilidade, segurança e alto desempenho em ambientes corporativos.</p>
             </section>
 
-        <section id="importancia">
+        <section id="importancia" class="importancia">
             <h2>Importância</h2>
             <p>...</p>
         </section>
 
-        <section id="vantedesvant">
+        <section class="vantedesvant">
             <h2>Vantagens</h2>
             <ul>
                 <li><strong>Portabilidade:</strong> Escreva uma vez, rode em qualquer lugar.</li>
@@ -61,7 +62,59 @@
             </ul>
         </section>
 
-        <section id="curiosidades">
+        <section id="curiosidades" class="curiosidades">
+    <h2>Curiosidades Legais sobre Java Web</h2>
+    <ul>
+        <li>
+            <strong onclick="toggleCuriosidade(this)">O nome "Java" vem do café!</strong>
+            <div>
+                Você sabia que o nome <em>Java</em> foi inspirado no café da ilha de Java, na Indonésia?  
+                Os criadores escolheram esse nome para transmitir a ideia de energia e dinamismo — e, até hoje, o Java Web "acorda" milhões de sites e sistemas pelo mundo.
+            </div>
+        </li>
+
+        <li>
+            <strong onclick="toggleCuriosidade(this)">Usado por sites gigantes como o LinkedIn</strong>
+            <div>
+                O <em>LinkedIn</em>, uma das maiores redes sociais profissionais do mundo, usa Java Web para garantir que o site funcione rápido e com segurança, mesmo com milhões de usuários acessando ao mesmo tempo.
+            </div>
+        </li>
+
+        <li>
+            <strong onclick="toggleCuriosidade(this)">Servlets: o "garçom" invisível do Java Web</strong>
+            <div>
+                Os <em>Servlets</em> são componentes que recebem pedidos dos usuários e entregam respostas dinâmicas, funcionando como um garçom que atende as mesas, mas ninguém vê o trabalho deles acontecendo nos bastidores.
+            </div>
+        </li>
+
+        <li><strong onclick="toggleCuriosidade(this)">Crie um site em menos de 1 minuto com Spring Boot</strong>
+            <div>
+                Com o framework <em>Spring Boot</em>, desenvolvedores podem criar aplicações web completas rapidamente, sem complicações.  
+                Em menos de um minuto, é possível ter um site rodando para testes e até produção!
+            </div>
+        </li>
+
+        <li><strong onclick="toggleCuriosidade(this)">Ajudou a revolucionar o internet banking seguro</strong>
+            <div>
+                Desde os anos 2000, o Java Web tem sido usado para construir sistemas bancários online seguros, garantindo estabilidade e proteção em transações pela internet — algo fundamental para o mundo digital atual.
+            </div>
+        </li>
+
+        <li><strong onclick="toggleCuriosidade(this)">Base de muitos sistemas governamentais no mundo</strong>
+            <div>
+                Vários órgãos públicos utilizam Java Web por sua segurança e estabilidade para oferecer serviços online à população.
+            </div>
+        </li>
+        <li><strong onclick="toggleCuriosidade(this)">Pode rodar em servidores baratos e até gratuitos</strong>
+            <div>
+                Servidores como <em>Apache Tomcat</em> e <em>Jetty</em> são gratuitos e open source, permitindo que qualquer pessoa teste e publique aplicações Java Web sem custo.
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+        <!-- <section class="curiosidades">
             <h2> Curiosidades Legais sobre Java Web</h2>
             <ul>
                 <li><strong>O nome “Java” vem do café!</strong><br>
@@ -88,18 +141,20 @@
                 Servidores como <em>Apache Tomcat</em> e <em>Jetty</em> são gratuitos e open source, permitindo que qualquer pessoa teste e publique aplicações Java Web sem custo.
                  </li>
             </ul>
-        </section>
+        </section> -->
 
-        <section id="exemplos">
+        <section class="exemplos">
             <h2>Exemplos</h2>
             <ul><li>...</li></ul>
         </section>
 
-        <section id="conclusao">
+        <section class="conclusao">
             <h2>Conclusão</h2>
             <p>...</p>
         </section>
     </main> 
+
+    <script src="script.js"></script>
          
 </body>
 </html>

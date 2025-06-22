@@ -1,0 +1,177 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecao{
+    font-size: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cabecao h1{
+    margin: 100px;
+}
+
+.Menu{
+    margin-bottom: 70px;
+}
+
+.Menu ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.Menu li{
+    list-style-type: none;
+}
+
+.java {
+    height: 30vh;
+    width: auto;
+    background-color: cyan;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.java h2{
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+.java p{
+    padding: 2%;
+}
+
+.javaweb {
+    height: 35vh;
+    width: auto;
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.javaweb h2{
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+.javaweb p{
+    padding: 1%;
+}
+
+.importancia {
+    height: 50vh;
+    width: auto;
+    background-color: cyan;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.importancia h2{
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+.importancia p{
+    padding: 2%;
+}
+
+.curiosidades {
+    min-height: 50vh;
+    width: auto;
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-bottom: 70px;
+    transition: min-height 0.5s ease;
+}
+
+.curiosidades h2{
+     margin-left: 100px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 50px;
+}
+
+.curiosidades ul {
+        list-style: none;
+        padding: 2%;
+}
+    
+.curiosidades li {
+        margin-bottom: 15px;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+    
+.curiosidades li strong {
+        display: block;
+        padding: 15px;
+        background-color: #ff0000;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 30px;
+}
+    
+.curiosidades li strong:hover {
+        background-color: #530000;
+}
+    
+.curiosidades li strong::after {
+        content: "+";
+        font-size: 20px;
+        float: right;
+        transition: transform 1s ease;
+}
+    
+.curiosidades li strong.active::after {
+        content: "-";
+}
+    
+.curiosidades li div {
+        padding: 0 15px;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        transition: 
+            max-height 0.5s ease-in-out,
+            padding 0.3s ease;
+        transform-origin: top;
+        opacity: 0;
+        font-size: 20px;
+}
+    
+.curiosidades li div.show {
+        padding: 15px;
+        max-height: 1000px; /* Valor maior que o conteúdo real */
+        opacity: 1;
+        animation: fadeIn 0.5s ease forwards;
+        animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { 
+            opacity: 0;
+            transform: translateY(-10px);
+    }
+    to { 
+            opacity: 1;
+            transform: translateY(10);
+    }
+}

@@ -17,6 +17,7 @@
             <ul>
                 <li><a href="#java">Java</a></li>
                 <li><a href="#javaweb">Java Web</a></li>
+                <li><a href="#timeline-section">Como Funciona?</a></li>
                 <li><a href="#importancia">Importância</a></li>
                 <li><a href="#vantedesvant">Vantagens/Desvantagens</a></li>
                 <li><a href="#curiosidades">Curiosidades</a></li>
@@ -38,29 +39,83 @@
                 <p>Com ele, é possível criar desde páginas dinâmicas até sistemas empresariais complexos. Seu uso é amplamente adotado por bancos, empresas, órgãos governamentais e startups, graças à sua escalabilidade, segurança e alto desempenho em ambientes corporativos.</p>
             </section>
 
-        <section id="importancia" class="importancia">
+            <section id="timeline-section" class="timeline-section">
+                <h2>Como Funciona o Java Web</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="circle">1</div>
+                        <h3>Navegador envia requisição</h3>
+                        <p>O usuário acessa uma página e o navegador envia uma solicitação HTTP para o servidor, pedindo conteúdo ou dados.</p>
+             </div>
+            <div class="timeline-item">
+                <div class="circle">2</div>
+                    <h3>Servidor Java Web processa</h3>
+                    <p>O servidor que roda Java Web (como com Servlets ou frameworks como Spring) interpreta a requisição e decide o que deve ser feito.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">3</div>
+                    <h3>Consulta ao banco de dados</h3>
+                    <p>Se for necessário, o servidor faz uma consulta ao banco de dados (MySQL, PostgreSQL, Oracle etc.) para buscar ou gravar informações.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">4</div>
+                    <h3>Preparação da resposta dinâmica</h3>
+                    <p>Com os dados em mãos, o servidor gera dinamicamente uma resposta — como uma página HTML ou dados em JSON — conforme solicitado.</p>
+             </div>
+            <div class="timeline-item">
+                <div class="circle">5</div>
+                    <h3>Resposta chega ao navegador</h3>
+                    <p>O servidor envia a resposta de volta ao navegador, que exibe a página, os dados ou a funcionalidade para o usuário.</p>
+            </div>
+         </div>
+        </section>
+        
+        <section id="importancia" class="impact-section">
             <h2>Importância</h2>
-            <p>...</p>
+             <div class="impact-item">
+                <h3>🧠 Papel Estratégico no Desenvolvimento Web</h3>
+                <p>Java Web vai além da tecnologia: ele sustenta sistemas que exigem confiança, disponibilidade e longa vida útil. Sua presença é comum em setores que não podem falhar, como saúde, bancos e governos.</p>
+        </div>
+             <div class="impact-item">
+                <h3>🧱 Base de Infraestruturas Críticas</h3>
+                <p>Muitos serviços que usamos diariamente — como emitir documentos, acessar contas bancárias ou consultar resultados — são construídos com Java Web, o que mostra sua relevância na sociedade digital.</p>
+        </div>
+            <div class="impact-item">
+                <h3>🛠 Solidez para Projetos de Longo Prazo</h3>
+                <p>Empresas escolhem Java Web por ser uma solução consolidada. Isso significa menos risco, mais estabilidade e suporte contínuo, tornando-o ideal para aplicações que precisam durar anos.</p>
+        </div>
+            <div class="impact-item">
+                <h3>🔄 Conectividade e Integração</h3>
+                <p>Java Web se integra facilmente com bancos de dados, sistemas antigos e novas tecnologias, o que o torna essencial em ambientes corporativos complexos e conectados.</p>
+        </div>
         </section>
 
-        <section id="vantedesvant" class="vantedesvant">
-            <h2>Vantagens</h2>
-            <ul>
-                <li><strong>Portabilidade:</strong> Escreva uma vez, rode em qualquer lugar.</li>
-                <li><strong>Escalabilidade:</strong> Suporta desde pequenos sistemas até grandes plataformas corporativas.</li>
-                <li><strong>Segurança:</strong> Diversos recursos de proteção embutidos.</li>
-                <li><strong>Comunidade e Documentação:</strong> Ampla rede de suporte e tutoriais.</li>
-                <li><strong>Frameworks Poderosos:</strong> Spring, JSF, Hibernate, JPA, entre outros.</li>
+        <section id="vantedesvant" class="vd-section">
+            <h2>Vantagens e Desvantagens</h2>
+                <div class="vd-container">
+                    
+                <div class="vd-box vantagens">
+                    <h3>Vantagens</h3>
+                <ul>
+                    <li><strong>Portabilidade:</strong> Escreva uma vez, rode em qualquer lugar.</li>
+                    <li><strong>Escalabilidade:</strong> Suporta desde pequenos sistemas até grandes plataformas corporativas.</li>
+                    <li><strong>Segurança:</strong> Diversos recursos de proteção embutidos.</li>
+                    <li><strong>Comunidade e Documentação:</strong> Ampla rede de suporte e tutoriais.</li>
+                    <li><strong>Frameworks Poderosos:</strong> Spring, JSF, Hibernate, JPA, entre outros.</li>
             </ul>
-            <h2>Desvantagens</h2>
-            <ul>
-                <li><strong>Curva de aprendizado:</strong> Pode ser mais complexo para iniciantes.</li>
-                <li><strong>Verboso:</strong> Exige mais código para tarefas simples.</li>
-                <li><strong>Desempenho inicial:</strong> Alguns frameworks podem ser pesados na inicialização.</li>
-                <li><strong>Configuração complexa:</strong> Setup inicial pode ser complicado, mesmo com ferramentas como Spring Boot.</li>
-                <li><strong>Menor popularidade no front-end:</strong> Java é geralmente focado no back-end, necessitando de integrações com tecnologias modernas de front-end.</li>
+            </div>
+                <div class="vd-box desvantagens">
+                    <h3>Desvantagens</h3>
+                <ul>
+                    <li><strong>Curva de aprendizado:</strong> Pode ser mais complexo para iniciantes.</li>
+                    <li><strong>Verboso:</strong> Exige mais código para tarefas simples.</li>
+                    <li><strong>Desempenho inicial:</strong> Alguns frameworks podem ser pesados na inicialização.</li>
+                    <li><strong>Configuração complexa:</strong> Setup inicial pode ser complicado, mesmo com ferramentas como Spring Boot.</li>
+                    <li><strong>Menor popularidade no front-end:</strong> Java é geralmente focado no back-end, necessitando de integrações com tecnologias modernas de front-end.</li>
             </ul>
-        </section>
+            </div>
+                </section>
+
 
         <section id="curiosidades" class="curiosidades">
     <h2>Curiosidades Java Web</h2>
@@ -131,13 +186,18 @@
             <h3>Sistemas Governamentais</h3>
             <p>Órgãos públicos utilizam Java Web para oferecer serviços online com estabilidade e segurança.</p>
         </div>
+            <div class="card">
+                <img src="IMG/ecommerce.png">    
+            <h3>E-commerce</h3>
+            <p>Grandes lojas virtuais, como Amazon, eBay e Netshoes, utilizam Java Web no back-end para garantir desempenho, segurança e integração eficiente em milhões de transações diárias.</p>
+            </div>
     </div>
 </section>
 
 
-        <section class="conclusao">
+        <section id="conclusao" class="conclusao">
             <h2>Conclusão</h2>
-            <p>...</p>
+            <p>Java Web não é uma tecnologia para quem busca algo fácil e simples, apesar disso ele cumpre o seu papel muito bem sendo ideal para projetos sérios e seguros com uma longa duração. Java Web é uma tecnologia extraordinária, com uma grande história e com um futuro maior ainda.</p>
         </section>
     </main>
      

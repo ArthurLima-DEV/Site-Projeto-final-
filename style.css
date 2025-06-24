@@ -56,13 +56,13 @@ html {
 
 .java {
     margin-top: 30px;
-    height: 30vh;
+    min-height: 30vh;
     width: auto;
-    background-color: cyan;
+    background-color: rgb(203, 255, 255);
     border-radius: 50px;
     font-size: 20px;
     margin-bottom: 70px;
-}
+} 
 
 .java h2{
     margin-left: 100px;
@@ -74,9 +74,9 @@ html {
 }
 
 .javaweb {
-    height: 35vh;
+    min-height: 40vh;
     width: auto;
-    background-color: orange;
+    background-color: rgb(255, 220, 156);
     border-radius: 50px;
     font-size: 20px;
     margin-top: 30px;
@@ -266,7 +266,7 @@ html {
 .curiosidades {
     min-height: 50vh;
     width: auto;
-    background-color: orange;
+    background-color: #ebf8ff;
     border-radius: 50px;
     font-size: 20px;
     margin-bottom: 70px;
@@ -296,7 +296,7 @@ html {
 .curiosidades li strong {
         display: block;
         padding: 15px;
-        background-color: #ff0000;
+        background-color: #6584ff63;
         color: white;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -340,7 +340,7 @@ html {
 }
 
 .exemplos {
-    background-color: cyan;
+    background-color: #c9ffff;
     border-radius: 50px;
     padding: 50px;
     margin-bottom: 70px;
@@ -404,7 +404,7 @@ html {
      margin-top: 30px;
     height: 30vh;
     width: auto;
-    background-color: cyan;
+    background-color: #c9ffff;
     border-radius: 50px;
     font-size: 20px;
     margin-bottom: 70px;

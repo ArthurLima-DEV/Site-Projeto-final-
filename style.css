@@ -1,131 +1,156 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-      scroll-behavior: smooth;
-    }
-
-.cabecao{
-    font-size: 30px;
-    margin-bottom: 80px;
-    text-align: center;
+  scroll-behavior: smooth;
 }
 
-.cabecao h1{
-    margin: 100px;
+body {
+  background-color: #f5f7fa;
+  color: #333;
 }
 
-.Menu{
-      background: rgba(0, 0, 0, 0.85);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      padding: 10px 10px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(5px);
-    
+/* Cabeçalho */
+.cabecao {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #0d47a1;
+  color: white;
+  padding: 40px 20px;
+}
+.titulo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-.Menu ul{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.logo-java{
+  height: 80px;
+  width: auto;
+}
+.cabecao h1 {
+  margin: 10px;
 }
 
-.Menu li a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
+#java,
+#javaweb,
+#timeline-section,
+#importancia,
+#vantedesvant,
+#curiosidades ,
+#exemplos,
+#conclusao{
+  scroll-margin-top: 70px;
 }
 
-.Menu li a:hover{
-    color: orange;
-    font-weight: bold;
+/* Menu */
+.Menu {
+  background: #0d47a1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+
+}
+
+.Menu ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .Menu li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.java {
-    margin-top: 30px;
-    min-height: 30vh;
-    width: auto;
-    background-color: rgb(203, 255, 255);
-    border-radius: 50px;
-    font-size: 20px;
-    margin-bottom: 70px;
-} 
-
-.java h2{
-    margin-left: 100px;
-    padding-top: 30px;
+.Menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
 }
 
-.java p{
-    padding: 2%;
+.Menu li a:hover {
+  color: #ffa726;
+  font-weight: bold;
 }
 
-.javaweb {
-    min-height: 40vh;
-    width: auto;
-    background-color: rgb(255, 220, 156);
-    border-radius: 50px;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 70px;
+/* Seções */
+section {
+  margin: 30px 20px;
 }
 
-.javaweb h2{
-    margin-left: 100px;
-    padding-top: 30px;
+/* Java */
+.java, .javaweb, .importancia, .curiosidades, .exemplos {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.javaweb p{
-    padding: 1%;
+.java:hover,
+.javaweb:hover {
+  background-color: #e3f2fd; /* azul claro */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* leve sombra */
+  transition: all 0.3s ease-in-out;
 }
 
-.timeline-section{
-    text-align: center;
-    padding: 50px;
-    background-color: #f9f9f9
+.java h2, .javaweb h2, .importancia h2, .curiosidades h2, .exemplos h2, .timeline-section h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
 }
 
-.timeline{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
+/* Timeline */
+.timeline-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.timeline-item{
-    flex: 1 1 200px;
-    max-width: 220px;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    border-top: 5px solid #007bff;
-    box-shadow:  0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.timeline-item:hover{
-    transform: scale(1.18);
+.timeline-item {
+  flex: 1 1 200px;
+  max-width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  border-top: 5px solid #1976d2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.circle{
-     width: 40px;
+.timeline-item:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  width: 40px;
   height: 40px;
   margin: 0 auto 10px;
-  background-color: #007bff;
+  background-color: #1976d2;
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -135,21 +160,12 @@ html {
   justify-content: center;
 }
 
-.timeline-item h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.timeline-item p {
-  font-size: 14px;
-  color: #444;
-}
-
+/* Importância */
 .impact-section {
-  background: #f1faff;
+  background: #e3f2fd;
   padding: 40px 20px;
   border-radius: 15px;
-  margin-bottom: 50px;
+  margin: 30px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
@@ -189,168 +205,120 @@ html {
   color: #444;
 }
 
-@media (max-width: 768px) {
-  .impact-section {
-    padding: 30px 15px;
-  }
-
-  .impact-item h3 {
-    font-size: 1.15rem;
-  }
-
-  .impact-item p {
-    font-size: 0.95rem;
-  }
+/* Vantagens/Desvantagens */
+.vd-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-.vd-section{
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    font-family: Arial, sans-serif;
-    color: #333;
-    
+.vd-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0d47a1;
 }
- .vd-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
 
-.vd-container{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
+.vd-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .vd-box {
-    flex: 1 1 400px;
-    background: #f7f7f7;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-.vd-box:hover{
-    transform: scale(1.05);
+  flex: 1 1 400px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vd-box:hover {
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
 .vd-box h3 {
-    margin-bottom: 1rem;
-    color: #2e7d32; 
-  }
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
 
 .vd-box.desvantagens h3 {
-    color: #c62828;
-  }
+  color: #c62828;
+}
 
 .vd-box ul {
-    list-style-type: disc;
-    padding-left: 1.2rem;
-  }
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
 
 .vd-box ul li {
-    margin-bottom: 0.8rem;
-    line-height: 1.4;
-  }
-.vd-box strong {
-    color: #000;
-  }
-
-@media (max-width: 720px) {
-    .vd-container {flex-direction: column; }
-  }
-
-.curiosidades {
-    min-height: 50vh;
-    width: auto;
-    background-color: #ebf8ff;
-    border-radius: 50px;
-    font-size: 20px;
-    margin-bottom: 70px;
-    transition: min-height 0.5s ease;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
 }
 
-.curiosidades h2{
-     margin-left: 100px;
-    padding-top: 30px;
-    font-size: 40px;
-    margin: 50px;
-}
-
+/* Curiosidades */
 .curiosidades ul {
-        list-style: none;
-        padding: 2%;
+  list-style: none;
+  padding: 0;
 }
-    
+
 .curiosidades li {
-        margin-bottom: 15px;
-        border: 1px solid #000000;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-    
+
 .curiosidades li strong {
-        display: block;
-        padding: 15px;
-        background-color: #6584ff63;
-        color: white;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-size: 30px;
+  display: block;
+  padding: 15px;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 22px;
 }
-    
+
 .curiosidades li strong:hover {
-        background-color: #530000;
+  background-color: #0d47a1;
 }
-    
+
 .curiosidades li strong::after {
-        content: "+";
-        font-size: 20px;
-        float: right;
-        transition: transform 1s ease;
+  content: "+";
+  font-size: 20px;
+  float: right;
 }
-    
+
 .curiosidades li strong.active::after {
-        content: "-";
+  content: "-";
 }
-    
+
 .curiosidades li div {
-        padding: 0 15px;
-        max-height: 0;
-        overflow: hidden;
-        background-color: #f9f9f9;
-        transition: 
-            max-height 0.5s ease-in-out,
-            padding 0.3s ease;
-        transform-origin: top;
-        opacity: 0;
-        font-size: 20px;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: max-height 0.5s ease-in-out, padding 0.3s ease;
+  opacity: 0;
+  font-size: 18px;
 }
-    
+
 .curiosidades li div.show {
-        padding: 15px;
-        max-height: 1000px; /* Valor maior que o conteúdo real */
-        opacity: 1;
-        animation: fadeIn 0.5s ease forwards;
-        animation: slideDown 0.4s ease forwards;
+  padding: 15px;
+  max-height: 1000px;
+  opacity: 1;
+  animation: slideDown 0.4s ease forwards;
 }
 
-.exemplos {
-    background-color: #c9ffff;
-    border-radius: 50px;
-    padding: 50px;
-    margin-bottom: 70px;
-    font-size: 20px;
-}
-
+/* Exemplos de uso */
 .exemplos h2 {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .card-container {
@@ -376,7 +344,7 @@ html {
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     border-bottom: 1px solid #ccc;
 }
@@ -391,40 +359,83 @@ html {
     font-size: 18px;
     color: #333;
 }
-
-.rodape{
-    background-color: black;
-    color: #f9f9f9;
-    text-align: center;
-    height: 50px;
-    padding-top: 30px;
+/* conclusao/botao */
+.conclusao h2{
+  color: #0d47a1;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .conclusao{
-     margin-top: 30px;
-    height: 30vh;
-    width: auto;
-    background-color: #c9ffff;
-    border-radius: 50px;
-    font-size: 20px;
-    margin-bottom: 70px;
+  text-align: center;
+  background-color: #e3f2fd;
+   border-radius: 20px;
+  padding: 30px;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.conclusao h2{
-    margin-left: 80px ;
-    padding-top: 20px;
+.botao{
+    background-color: #0d47a1;  
+    border-radius: 10px;
+    color: #ccc;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 20px;
+  
 }
-.conclusao p{
-    padding: 20px;
-    
+.botao:hover {
+  background-color: #0b2e7e;
+  transform: scale(1.05);
 }
-@keyframes fadeIn {
-    from { 
-            opacity: 0;
-            transform: translateY(-10px);
-    }
-    to { 
-            opacity: 1;
-            transform: translateY(10);
-    }
+
+/* Rodapé */
+.rodape {
+  background-color: #0d47a1;
+  color: #f9f9f9;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+}
+
+/* Animações */
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .Menu ul {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+  .titulo-container {
+    flex-direction: column;
+  }
+
+  .logo-java {
+    height: 50px;
+  }
+}
 }
